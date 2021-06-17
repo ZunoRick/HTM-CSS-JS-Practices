@@ -1,0 +1,90 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 90vh;
+}
+
+.dice div{
+    margin: 0;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+div.dot{
+    border: none;
+    background-color: #dadada;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.face-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face-2,
+.face-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.face-2 .dot{
+    margin: 15px;
+}
+
+.face-2 .dot:nth-child(1){
+    align-self: flex-start;
+}
+.face-2 .dot:nth-child(2){
+    align-self: flex-end;
+}
+
+.face-3 .dot{
+    margin: 10px;
+}
+
+.face-3 .dot:nth-child(1){
+    align-self: flex-start;
+}
+.face-3 .dot:nth-child(3){
+    align-self: flex-end;
+}
+
+.face-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.face-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.face-5 .dot:nth-child(3){
+    grid-column: 1 / 3;
+}
+
+.face-6{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+div .show{
+    width: 200px;
+    height: 200px;
+    overflow: visible;
+    border: 3px solid #000;
+}
