@@ -11,7 +11,7 @@ function throwDice() {
         const face = document.querySelector(`.face-${num}`)
         if (!face.className.includes('show')) {
             showFace.classList.remove('show');
-            face.classList.toggle('show');
+            face.classList.add('show');
         }
     });
 }
