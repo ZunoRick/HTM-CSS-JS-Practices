@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(25,25,57);
+    background: linear-gradient(90deg, rgba(25,25,57,1) 0%, rgba(20,46,96,1) 23%, rgba(73,115,186,1) 65%, rgba(142,170,213,1) 100%);
+}
+
+.drop-area{
+    border: 5px dashed #ddd;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drop-area.active{
+    background-color: rgba(89, 149, 238, 0.5);
+    color: black;
+    border: 2px dashed #618ac9;
+}
+
+.drop-area h2{
+    font-size: 30px;
+    color: #fefefe;
+    font-weight: 500;
+}
+
+.drop-area span{
+    font-size: 25px;
+    color: #fefefe;
+    font-weight: 500;
+}
+
+.drop-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    background-color: #003fa8;
+    color: #fefefe;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+
+#preview{
+    margin-top: 10px;
+}
+
+.status-text{
+    padding: 0 10px;
+}
+
+.success{
+    color: #52ad5a;
+}
+
+.failure{
+    color: #ff0000;
+}
