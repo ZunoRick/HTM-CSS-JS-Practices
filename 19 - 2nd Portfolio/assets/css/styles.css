@@ -71,8 +71,7 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-    /* HSL color mode */
-    --first-color-second: hsl( var(--hue-color), 30%, 8%);
+    /*HSLcolormode*/--first-color-second: hsl( var(--hue-color), 30%, 8%);
     --title-color: hsl( var(--hue-color), 8%, 95%);
     --text-color: hsl( var(--hue-color), 8%, 75%);
     --input-color: hsl( var(--hue-color), 29%, 16%);
@@ -80,6 +79,19 @@ body.dark-theme{
     --container-color: hsl( var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl( var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl( var(--hue-color), 12%, 36%);
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+
+body{
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
 }
 
 /*========== Button Dark/Light ==========*/
